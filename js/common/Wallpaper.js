@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
 	StyleSheet,
-	Image,
+	ImageBackground,
 } from 'react-native';
 
 import bgSrc from './img/wallpaper.png';
@@ -9,18 +9,14 @@ import bgSrc from './img/wallpaper.png';
 export default class Wallpaper extends Component {
 	render() {
 		return (
-			<Image style={styles.picture} source={bgSrc}>
+			<ImageBackground style={styles.picture} source={bgSrc}>
 				{this.props.children}
-			</Image>
+			</ImageBackground>
 		);
 	}
 }
 
 const styles = StyleSheet.create({
 	picture: {
-		flex: 1,
-		width: null,
-		height: null,
-		resizeMode: 'cover',
-	},
+		flex: 1,},
 });

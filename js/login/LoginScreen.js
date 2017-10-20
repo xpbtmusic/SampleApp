@@ -12,7 +12,7 @@ export default class LoginScreen extends Component {
 				<Logo />
 				<Form />
 				<SignupSection/>
-				<ButtonSubmit/>
+				<ButtonSubmit navigation={this.props.navigation}/>
 			</Wallpaper>
 		);
 	}
